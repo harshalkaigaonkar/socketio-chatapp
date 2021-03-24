@@ -91,6 +91,7 @@ $messageForm.addEventListener('submit', (e) => {
             return console.log(error);
         }
         console.log('Message was delivered');
+
     });
 })
 
@@ -118,4 +119,5 @@ $messageLocation.addEventListener('click', (e) => {
 })
 
 socket.emit('join', { username, room }, (error) => {
+
 });

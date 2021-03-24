@@ -4,7 +4,7 @@ const express = require('express');
 const socketio = require('socket.io');
 const filter = require('bad-words');
 const { generateMessage, generateLocationMessage } = require('./utils/messages');
-const { addUser, removeUser, getUser, getUsersInChatRoom } = require('./utils/users')
+const { addUser, removeUser, getUser, getUsersInChatRoom, getAllActiveRooms } = require('./utils/users')
 
 const app = express();
 const server = http.createServer(app);
